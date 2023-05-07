@@ -1,3 +1,4 @@
+#import following packages
 import streamlit as st
 from streamlit_option_menu import option_menu
 import psycopg2
@@ -9,7 +10,10 @@ import os
 import json
 import plotly.graph_objects as go
 import psycopg2
-db=psycopg2.connect(host='localhost', user='postgres', password=318327, port=5432, database="PhonePe")
+
+
+#Create database connection
+db=psycopg2.connect(host='localhost', user='postgres', password=******, port=5432, database="PhonePe")
 cursor=db.cursor()
 
 
