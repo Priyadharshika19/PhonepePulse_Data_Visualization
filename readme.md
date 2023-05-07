@@ -1,11 +1,13 @@
 PhonePe-Pulse-Data-2018-2022-Analysis
-I have created a dashboard to visualize Phonepe pulse Github repository data(https://github.com/PhonePe/pulse.git) using Streamlit and Plotly in Python
+I have created a dashboard to visualize Phonepe pulse Github repository data(https://github.com/PhonePe/pulse#readme) using Streamlit and Plotly in Python
 
 
-THE MAIN COMPONENTS OF DASHBOARD ARE
+The main contents are:
 
 1 Extracting data from the Phonepe pulse Github repository and
 cloning it
+![git bash](https://user-images.githubusercontent.com/129640468/236680408-34dda6e5-f95c-4775-9f81-b94edc0d0881.PNG)
+
 
 2 Transforming json data into table form and storing in database
 
