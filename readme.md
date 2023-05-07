@@ -12,7 +12,9 @@ cloning it
 2 Transforming json data into table form and storing in database
 
 3 Visualizing the following data  with the help of Plotly and Streamlit.
+
         * Aggrigated transaction
+        
         * Aggrigated user
         * Geo-visualization of transaction
         * Geo-visualization of user
