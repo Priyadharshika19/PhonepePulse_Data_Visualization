@@ -880,12 +880,12 @@ if selected1== "Total Payments":
 
 if selected1== "Total Users":
     st.write(f"India's total PhonePe users growth between year {year[0]} to {year[-1]}")
-    t_user = f"select year, sum(registered_user) from top_dist_user group by year ;"
-    u_df = pd.DataFrame(top_data(t_user), columns=["Year", "Registered_user"])
+    t_user = f"select state, year, sum(registered_user) from top_dist_user group by state, year ;"
+    u_df = pd.DataFrame(top_data(t_user), columns=["State", "Year", "Registered_user"])
     u_df.index = u_df.index + 1
     fig = px.bar(u_df, x='Year', y='Registered_user',
-                 hover_data=['Year', 'Registered_user'], color='Registered_user',
-                 width=1200, height=500, color_continuous_scale="Aggrnyl")
+                 hover_data=['Year', 'Registered_user'], color='State',
+                  width=1200, height=500, color_continuous_scale="Aggrnyl")
     st.plotly_chart(fig, theme=None, use_container_width=True)
 
 if selected1 == "Payment Types":
@@ -911,6 +911,9 @@ if selected1 == "Devices":
 if selected1 == "Contact Detail":
     st.write(">>PhonePe project:")
     st.write(">>Created by: Priyadharshika.M")
+    st.write(">>Linkedin page: https://www.linkedin.com/in/priyadharshika-m-176204269/")
+    st.write(">>Github Page: https://github.com/Priyadharshika19")
+    st.write(">>Github repository: https://github.com/Priyadharshika19/PhonepePulse_Data_Visualization")
 
 
 
